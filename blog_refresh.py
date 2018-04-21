@@ -10,7 +10,7 @@ url_github = "https://githubengineering.com"
 url_square = "https://medium.com/square-corner-blog"
 url_linkedin = "https://engineering.linkedin.com/blog"
 
-def get_today_content():
+def get_netflix_content():
     req_netflix = requests.get(url_netflix)
     soup = BeautifulSoup(r_netflix.text, "html.parser")
     posts = {}
