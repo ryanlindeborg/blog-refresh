@@ -13,9 +13,13 @@ url_linkedin = "https://engineering.linkedin.com/blog"
 def get_netflix_content():
     r_netflix = requests.get(url_netflix)
     soup = BeautifulSoup(r_netflix.text, "html.parser")
-    posts = {}
+    netflix_posts = {}
     print(soup.prettify())
+
+def get_linkedin_content():
+    r_linkedin = requests.get(url_linkedin)
+    soup = BeautifulSoup(r_linkedin.text, "html.parser")
+    linkedin_posts = {}
 
 if __name__ == "__main__":
     print("work in progress:\n")
-    get_netflix_content()
