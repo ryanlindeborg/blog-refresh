@@ -11,6 +11,11 @@ url_square = "https://medium.com/square-corner-blog"
 url_linkedin = "https://engineering.linkedin.com/blog"
 
 def get_netflix_content():
-    req_netflix = requests.get(url_netflix)
+    r_netflix = requests.get(url_netflix)
     soup = BeautifulSoup(r_netflix.text, "html.parser")
     posts = {}
+    print(soup.prettify())
+
+if __name__ == "__main__":
+    print("work in progress:\n")
+    get_netflix_content()
